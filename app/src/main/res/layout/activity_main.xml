@@ -30,30 +30,33 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.554" />
 
-    <Text
+    <TextView
         android:id="@+id/Description"
         android:layout_width="410dp"
-        android:layout_height="100dp"
+        android:layout_height="84dp"
+        android:text=" HEX: \n RGB:"
+        android:textColor="#000"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.698"
-        android:text="HexCode: \nRGB:"
-        android:textsize="18sp"
-
-
+        app:layout_constraintVertical_bias="0.681"
         tools:ignore="HardcodedText" />
 
-    <Text
+    <TextView
         android:id="@+id/YourColour"
-        android:layout_width="408dp"
-        android:layout_height="50dp"
+        android:layout_width="410dp"
+        android:layout_height="51dp"
+        android:text="                 Your Colour"
+        android:textColor="#000"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.456" />
+        app:layout_constraintVertical_bias="0.455"
+        tools:ignore="HardcodedText" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
