@@ -6,4 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".LaunchActivity">
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="278dp"
+        android:layout_height="86dp"
+        android:text="        COLOR COMPLEMENTS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="210dp"
+        android:layout_height="119dp"
+        android:text="On the following page, select a color of your choice on the color wheel and find out what color complements it. Click the button to get started"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="564dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
