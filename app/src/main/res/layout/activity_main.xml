@@ -31,7 +31,7 @@
         app:layout_constraintVertical_bias="0.554" />
 
     <TextView
-        android:id="@+id/Description"
+        android:id="@+id/description"
         android:layout_width="410dp"
         android:layout_height="84dp"
         android:text=" HEX: \n RGB:"
@@ -44,7 +44,7 @@
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/YourColour"
+        android:id="@+id/colour"
         android:layout_width="410dp"
         android:layout_height="51dp"
         android:text="                 Your Colour"
