@@ -15,6 +15,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     ImageView myImage;
     TextView myDescription;
+    TextView myFinalDescription;
     TextView myColourComplement;
     TextView myColour;
     View myView;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         myImage = findViewById(R.id.image);
         myDescription = findViewById(R.id.description);
+        myFinalDescription = findViewById(R.id.finalDescription);
         myView = findViewById(R.id.view);
         myResultView = findViewById(R.id.resultView);
         myColourComplement = findViewById(R.id.colourComplement);
@@ -59,11 +61,14 @@ public class MainActivity extends AppCompatActivity {
 
 
                     String hexCode = "#" + Integer.toHexString(pixels);
+                    String hex = String.format("#ff%02x%02x%02x", myRed, myGreen, myBlue);
                     
                     myView.setBackgroundColor(Color.rgb(red, green, blue ));
                     myDescription.setText(" RGB: " + red + "," + green + "," + blue
                     + "\n HEX: " + hexCode);
                     myResultView.setBackgroundColor((Color.rgb(myRed, myGreen, myBlue)));
+                    myFinalDescription.setText(" RGB: " + myRed + "," + myGreen + "," + myBlue
+                            + "\n HEX: " + hex);
 
                 }
                 return true;
