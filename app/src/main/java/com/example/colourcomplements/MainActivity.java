@@ -2,7 +2,6 @@ package com.example.colourcomplements;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -20,8 +19,6 @@ public class MainActivity extends AppCompatActivity {
     TextView myColour;
     View myView;
     View myResultView;
-
-
 
     Bitmap myBitmap;
     @Override
@@ -63,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                     String hexCode = "#" + Integer.toHexString(pixels);
                     String hex = String.format("#ff%02x%02x%02x", myRed, myGreen, myBlue);
                     
-                    myView.setBackgroundColor(Color.rgb(red, green, blue ));
+                    myView.setBackgroundColor(Color.rgb(red, green, blue));
                     myDescription.setText(" RGB: " + red + "," + green + "," + blue
                     + "\n HEX: " + hexCode);
                     myResultView.setBackgroundColor((Color.rgb(myRed, myGreen, myBlue)));
