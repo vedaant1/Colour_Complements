@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -14,7 +15,12 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     ImageView myImage;
     TextView myDescription;
+    TextView myColourComplement;
+    TextView myColour;
     View myView;
+    View myResultView;
+
+
 
     Bitmap myBitmap;
     @Override
@@ -25,6 +31,12 @@ public class MainActivity extends AppCompatActivity {
         myImage = findViewById(R.id.image);
         myDescription = findViewById(R.id.description);
         myView = findViewById(R.id.view);
+        myResultView = findViewById(R.id.resultView);
+        myColourComplement = findViewById(R.id.colourComplement);
+        myColour = findViewById(R.id.colour);
+
+        myColour.setPaintFlags(myColour.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+        myColourComplement.setPaintFlags(myColourComplement.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
         myImage.setDrawingCacheEnabled(true);
         myImage.buildDrawingCache(true);
@@ -41,11 +53,18 @@ public class MainActivity extends AppCompatActivity {
                     int green = Color.green(pixels);
                     int blue = Color.blue(pixels);
 
-                    String hexCode = "#" + Integer.toHexString(pixels);
+                    int myRed = 255 - red;
+                    int myBlue = 255 - blue;
+                    int myGreen = 255 - green;
 
+
+                    String hexCode = "#" + Integer.toHexString(pixels);
+                    
                     myView.setBackgroundColor(Color.rgb(red, green, blue ));
                     myDescription.setText(" RGB: " + red + "," + green + "," + blue
                     + "\n HEX: " + hexCode);
+                    myResultView.setBackgroundColor((Color.rgb(myRed, myGreen, myBlue)));
+
                 }
                 return true;
             }
