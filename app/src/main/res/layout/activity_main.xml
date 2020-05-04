@@ -70,6 +70,7 @@
     <TextView
         android:id="@+id/colour"
         android:layout_width="200dp"
+        android:textStyle="bold"
         android:layout_height="51dp"
         android:text="Your Colour"
         android:textColor="#000"
@@ -87,6 +88,7 @@
         android:layout_width="350dp"
         android:layout_height="51dp"
         android:text="Your Colour Complement"
+        android:textStyle="bold"
         android:textColor="#000"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -40,6 +40,7 @@
 
     <TextView
         android:id="@+id/randomColour"
+        android:textStyle="bold"
         android:layout_width="300dp"
         android:layout_height="50sp"
         android:text="Your Random Colour"
@@ -55,11 +56,12 @@
 
     <TextView
         android:id="@+id/outputColour"
-        android:layout_width="390dp"
+        android:layout_width="400dp"
         android:layout_height="50sp"
         android:text="Random Colour Complement"
         android:textColor="#000"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
