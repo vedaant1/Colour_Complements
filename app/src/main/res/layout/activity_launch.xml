@@ -9,26 +9,26 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="410dp"
-        android:layout_height="225dp"
-        android:text=" On the following page, select \n  a color of your choice on the \n color wheel and find out what \n        color complements it. \n
-       Click the button to get \n                    started!"
+        android:layout_width="394dp"
+        android:layout_height="365dp"
+        android:text=" Click on the Choose Colour button,and on the following page, select a color of your choice on the color wheel and find out what color complements it.
+        \n \n Or click the Randomize button to generate a random colour and its complement!"
         android:textColor="#000"
         android:textSize="30sp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.459"
+        app:layout_constraintVertical_bias="0.461"
         tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="316dp"
         android:layout_height="102dp"
-        android:text="         COLOR \nCOMPLEMENTS"
+        android:text="        COLOUR \nCOMPLEMENTS"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#000"
         android:textSize="40sp"
@@ -36,24 +36,38 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.074"
+        app:layout_constraintVertical_bias="0.041"
         tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="121dp"
         android:layout_height="73dp"
-        android:text="Get Started!"
+        android:text="Choose Colour"
         android:textColor="#000"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.825"
+        app:layout_constraintVertical_bias="0.892"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="121dp"
+        android:layout_height="73dp"
+        android:text="Randomize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892"
         tools:ignore="HardcodedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
