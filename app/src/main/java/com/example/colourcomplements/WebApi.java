@@ -19,7 +19,7 @@ public class WebApi {
         String line;
         StringBuffer responseContent = new StringBuffer();
         try {
-            URL url = new URL("http://thecolorapi.com/scheme?rgb=rgb("+r+","+g+","+b+")&mode=complement&count=1");
+            URL url = new URL("https://thecolorapi.com/scheme?rgb=rgb("+r+","+g+","+b+")&mode=complement&count=1");
             connection = (HttpURLConnection) url.openConnection();
 
             //Request setup method
