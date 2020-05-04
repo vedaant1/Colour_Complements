@@ -24,7 +24,6 @@ public class RandomActivity extends AppCompatActivity {
     TextView myOutputDescription;
     TextView myOutputColour;
 
-
     Random myRandom;
     int r;
     int g;
@@ -73,10 +72,6 @@ public class RandomActivity extends AppCompatActivity {
 
             }
         });
-
-
-
-
 
     }
 }

@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
                     int myBlue = 255 - blue;
                     int myGreen = 255 - green;
 
-
                     String hexCode = "#" + Integer.toHexString(pixels);
                     String hex = String.format("#ff%02x%02x%02x", myRed, myGreen, myBlue);
                     
