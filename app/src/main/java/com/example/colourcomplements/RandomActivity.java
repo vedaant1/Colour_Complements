@@ -33,6 +33,7 @@ public class RandomActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_random);
 
         myButton2 = findViewById(R.id.button2);
         myRandomColourView = findViewById(R.id.randomColourView);
