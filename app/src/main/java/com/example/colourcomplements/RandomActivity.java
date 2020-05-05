@@ -69,9 +69,7 @@ public class RandomActivity extends AppCompatActivity {
                 myResultColourView.setBackgroundColor((Color.argb(255, myRed, myGreen, myBlue)));
                 myOutputDescription.setText(" RGB: " + myRed + "," + myGreen + "," + myBlue
                         + "\n HEX: " + hexCode);
-
             }
         });
-
     }
 }

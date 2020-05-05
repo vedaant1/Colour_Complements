@@ -57,8 +57,7 @@ public class MainActivity extends AppCompatActivity {
                     int myGreen = 255 - green;
 
                     String hexCode = "#" + Integer.toHexString(pixels);
-                    //String hex = String.format("#ff%02x%02x%02x", myRed, myGreen, myBlue);
-                    String hex = WebApi.getComplement(red, green, blue);
+                    String hex = String.format("#ff%02x%02x%02x", myRed, myGreen, myBlue);
 
                     myView.setBackgroundColor(Color.rgb(red, green, blue));
                     myDescription.setText(" RGB: " + red + "," + green + "," + blue
@@ -67,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
                     myFinalDescription.setText(" RGB: " + myRed + "," + myGreen + "," + myBlue
                             + "\n HEX: " + hex);
+
 
                 }
                 return true;
