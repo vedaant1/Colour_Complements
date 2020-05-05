@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     View myResultView;
 
     Bitmap myBitmap;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
